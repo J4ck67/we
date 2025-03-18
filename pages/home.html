@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>STEAM CLONE</title>
+      <script type="module" src="firebaseauth.js"></script>
+  </head>
+  <body>
+    <section class="nav-sec">
+      <div class="nav-container">
+        <div class="left-nav">
+          <div class="nav-logo">
+            <h1>STEAM</h1>  
+          </div>
+          <div class="nav-menu">
+            <ul class="main-menu">
+              <li class="nav-list">
+                <a href="./home.html">HOME</a>
+              </li>
+              <li class="nav-list">
+                <a href="./categories.html">CATEGORIES</a>
+              </li>
+              <li class="nav-list">
+                <a href="./about.html">ABOUT</a>
+              </li>
+              <li class="nav-list">
+                <a href="">SUPPORT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-nav">
+          <div class="nav-list">
+            <a href="./login.html">LOGIN</a>
+            <span class="bar"> | </span>
+          </div>
+          <div class="ri">
+            <button class="header-buttons icon-button">
+              <span>
+                <i class="fas fa-search ty"></i>
+              </span>
+            </button>
+            <button class="burger-menu icon-button">
+              <span>
+                <i class="fas fa-bars ty"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider-sec">
+      <div class="slider-sec">
+        <div class="slider-video">
+          <video autoplay muted loop id="myVideo">
+            <source src="../res/videos/webm_page_bg_english.webm" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-sec">
+      <div class="main-container">
+        <div class="main-left">
+          <div class="list-item">
+            <p class="mtitle">Recomendation</p>
+            <ul class="main-s">
+              <li>
+                <a href=""><i class="fas fa-users"></i> By friends</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-bullseye"></i> By Curators</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-tag"></i></i> Tags</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="list-item">
+            <p class="mtitle">Discovery Queues</p>
+            <ul class="main-s">
+              <li>
+                <a href=""><i class="fas fa-vr-cardboard"></i>Recomendatations</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-plus-square"></i> By New Releases</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="list-item">
+            <p class="mtitle">Browse Catagories</p>
+            <ul class="main-s">
+              <li>
+                <a href=""><i class="fab fa-salesforce"></i> Top Sellers</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-plus-square"></i> New Releases</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-store"></i> Upcomming</a>
+              </li>
+
+              <li>
+                <a href=""><i class="fas fa-users"></i> Specials</a>
+              </li>
+              <li>
+                <a href=""><i class="fas fa-vr-cardboard"></i> Virtual Reality</a>
+              </li>
+
+              <li>
+                <a href=""><i class="fas fa-gamepad"></i> Controller Friendly</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="list-item">
+            <p class="mtitle">Browse by Genre</p>
+            <ul class="main-s">
+              <li>
+                <a href=""> Action</a>
+              </li>
+              <li>
+                <a href=""> RPG</a>
+              </li>
+              <li>
+                <a href=""> Simulation</a>
+              </li>
+
+              <li>
+                <a href=""> Action</a>
+              </li>
+              <li>
+                <a href=""> RPG</a>
+              </li>
+              <li>
+                <a href=""> Simulation</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mid-main">
+          <h1 class="m-title">feature and recomended</h1>
+          <div class="mid-cont">
+            <div class="ll">
+              <div class="main-card">
+                <div class="mySlides fade">
+                  <div class="img-content">
+                    <img src="../res/img/fr.jpg" alt="" class="hero" />
+                  </div>
+                  <div class="im-des">
+                    <div class="content-lp">
+                      <p class="ktitle">Froza 5</p>
+
+                      <div class="kimg">
+                        <div class="limg">
+                          <img src="../res/img/v2.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/v5.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/v2.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/v1.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="base-con">
+                        <p class="ltitle">Purchase now</p>
+                        <a href="" class="tags">BUY</a>
+                      </div>
+
+                      <div class="price">
+                        <div>
+                          <p class="amount">$40.44</p>
+                        </div>
+                        <div>
+                          <i class="fab fa-windows"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="img-content">
+                    <img src="../res/img/banner-img-2.jpg" alt="" class="hero" />
+                  </div>
+                  <div class="im-des">
+                    <div class="content-lp">
+                      <p class="ktitle">PUBG</p>
+
+                      <div class="kimg">
+                        <div class="limg">
+                          <img src="../res/img/news-10.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/news-1.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/news-3.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/news-4.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="base-con">
+                        <p class="ltitle">Purchase now</p>
+                        <a href="" class="tags">Topseller</a>
+                      </div>
+
+                      <div class="price">
+                        <div>
+                          <p class="amount">$40.44</p>
+                        </div>
+                        <div>
+                          <i class="fab fa-windows"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="img-content">
+                    <img src="../res/img/banner-img-3.jpg" alt="" class="hero" />
+                  </div>
+                  <div class="im-des">
+                    <div class="content-lp">
+                      <p class="ktitle">Red Blood 4</p>
+
+                      <div class="kimg">
+                        <div class="limg">
+                          <img src="../res/img/news-2.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/news-9.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/news-8.jpg" alt="" />
+                        </div>
+                        <div class="limg">
+                          <img src="../res/img/news-3.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="base-con">
+                        <p class="ltitle">Purchase now</p>
+                        <a href="" class="tags">Topseller</a>
+                      </div>
+
+                      <div class="price">
+                        <div>
+                          <p class="amount">$40.44</p>
+                        </div>
+                        <div class="kl" style="margin-left: -3000px">
+                          <i class="fab fa-windows"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <div style="text-align: center; margin-top: 20px">
+                <span class="dot" onclick="currentSlide1(1)"></span>
+                <span class="dot" onclick="currentSlide1(2)"></span>
+                <span class="dot" onclick="currentSlide1(3)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bot">
+        <img src="../res/img/rdr.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="comt">
+      <div class="comt-container">
+        <div class="main-card">
+          <div class="Slide fade">
+            <div class="img-content">
+              <video
+                poster="../res/img/b.jpg"
+                data-play="hover"
+                class="videod"
+                muted
+                loop
+                id="myVideos"
+              >
+                <source src="../res/videos/f1.webm" type="video/mp4" />
+              </video>
+            </div>
+            <div class="im-des ip">
+              <div class="rev-content">
+                <p class="otitle">
+                  "Obviously, this review doesn't feature considerable spoilers.
+                  Try the Demo I've beaten the demo twice in anticipation, which
+                  never happened to me before. I recommend checking it out
+                  first, naturally. ..."
+                </p>
+
+                <p class="load-rec"><a href="">Read the entire Review</a></p>
+
+                <div class="rev-user">
+                  <div>
+                    <img src="../res/img/adithsha.jpg" alt="" class="user" />
+                  </div>
+
+                  <div class="lm">
+                    <p class="uname">ABIN ROY</p>
+                    <p class="de">Played 5.5 hrs at reviw time</p>
+                    <p class="num">31 people found this review helpful</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Slide fade">
+            <div class="img-content">
+              <video
+                poster="../res/img/banner-img-2.jpg"
+                data-play="hover"
+                class="videod"
+                muted
+                loop
+                id="myVideos"
+              >
+        
+              </video>
+            </div>
+            <div class="im-des ip">
+              <div class="rev-content">
+                <p class="otitle">
+                  "Obviously, this review doesn't feature considerable spoilers.
+                  Try the Demo I've beaten the demo twice in anticipation, which
+                  never happened to me before. I recommend checking it out
+                  first, naturally. ..."
+                </p>
+
+                <p class="load-rec"><a href="">Read the entire Review</a></p>
+
+                <div class="rev-user">
+                  <div>
+                    <img src="../res/img/adithsha.jpg" alt="" class="user" />
+                  </div>
+
+                  <div class="lm">
+                    <p class="uname">ABHIJITH KRISHNAN</p>
+                    <p class="de">Played 5.5 hrs at reviw time</p>
+                    <p class="num">31 people found this review helpful</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Slide fade">
+            <div class="img-content">
+              <video
+                poster="../res/img/banner-img-3.jpg"
+                data-play="hover"
+                class="videod"
+                muted
+                loop
+                id="myVideos"
+              >
+                <source src="../res/videos/video-2-poster.webp" type="video/mp4" />
+              </video>
+            </div>
+            <div class="im-des ip">
+              <div class="rev-content">
+                <p class="otitle">
+                  "Obviously, this review doesn't feature considerable spoilers.
+                  Try the Demo I've beaten the demo twice in anticipation, which
+                  never happened to me before. I recommend checking it out
+                  first, naturally. ..."
+                </p>
+
+                <p class="load-rec"><a href="">Read the entire Review</a></p>
+
+                <div class="rev-user">
+                  <div>
+                    <img src="../res/img/adithsha.jpg" alt="" class="user" />
+                  </div>
+
+                  <div class="lm">
+                    <p class="uname">ADITH SHAJI</p>
+                    <p class="de">Played 5.5 hrs at reviw time</p>
+                    <p class="num">31 people found this review helpful</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlidess(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlidess(1)">&#10095;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="vr-sec">
+      <div class="vr-container">
+        <h1 class="vr-title">Popular VR Games</h1>
+
+        <div class="main-card">
+          <div class="vr-out fade">
+            <div class="vrslider">
+              <div class="vr-img">
+                <img class="vr-i" src="../res/img/v2.jpg" alt="" />
+              </div>
+              <div class="pt">
+                <p>$45.78</p>
+              </div>
+            </div>
+
+            <div class="vrslider">
+              <div class="vr-img">
+                <img class="vr-i" src="../res/img/news-1.jpg" alt="" />
+              </div>
+              <div class="pt">
+                <p>$45.78</p>
+              </div>
+            </div>
+
+            <div class="vrslider">
+              <div class="vr-img">
+                <img class="vr-i" src="../res/img/news-3.jpg" alt="" />
+              </div>
+              <div class="pt">
+                <p>$45.78</p>
+              </div>
+            </div>
+
+            <div class="vrslider">
+              <div class="vr-img">
+                <img class="vr-i" src="../res/img/news-7.jpg" alt="" />
+              </div>
+              <div class="pt">
+                <p>$45.78</p>
+              </div>
+            </div>
+          </div>
+          <div class="vr-out fade">
+            <div class="vrslider">
+              <div class="vr-img">
+                <img class="vr-i" src="../res/img/news-2.jpg" alt="" />
+              </div>
+              <div class="pt">
+                <p>$45.78</p>
+              </div>
+            </div>
+
+            <div class="vrslider">
+              <div class="vr-img">
+                <img class="vr-i" src="../res/img/news-3.jpg" alt="" />
+              </div>
+              <div class="pt">
+                <p>$45.78</p>
+              </div>
+            </div>
+
+            <div class="vrslider">
+              <div class="vr-img">
+                <img class="vr-i" src="../res/img/news-4.jpg" alt="" />
+              </div>
+              <div class="pt">
+                <p>$45.78</p>
+              </div>
+            </div>
+
+            <div class="vrslider">
+              <div class="vr-img">
+                <img class="vr-i" src="../res/img/news-1.jpg" alt="" />
+              </div>
+              <div class="pt">
+                <p>$45.78</p>
+              </div>
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlided(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlided(1)">&#10095;</a>
+        </div>
+        <div style="text-align: center; margin-top: 3em">
+          <span class="dott" onclick="currentSlided(1)"></span>
+          <span class="dott" onclick="currentSlided(2)"></span>
+          <span class="dott" onclick="currentSlided(3)"></span>
+        </div>
+      </div>
+    </section>
+    <section class="footer-sec">
+      <div class="footer-container">
+        <div class="footer-upper">
+          <div class="cop-logo"><a href=""> STEAM</a></div>
+          <div class="cop-des">
+            <div class="m1">
+              <p>
+                © 2025 Steam Corporation. All rights reserved. All trademarks
+                are property of their respective owners in the INDIA and other
+                countries. VAT included in all prices where applicable.
+              </p>
+            </div>
+          </div>
+          <div class="co-logo">
+            <img src="../res/img/footerLogo_valve_new.png" alt="" />
+          </div>
+        </div>
+
+        <div class="footer-lower">
+          <div class="sam">
+            <a href="">About Value</a>
+          </div>
+          <span class="mm">|</span>
+
+          <div class="sam">
+            <a href="">Jobs</a>
+          </div>
+          <span class="mm">|</span>
+
+          <div class="sam">
+            <a href="">Steamworks</a>
+          </div>
+          <span class="mm">|</span>
+          <div class="sam">
+            <a href="">Steam Distribution</a>
+          </div>
+          <span class="mm">|</span>
+          <div class="sam">
+            <a href="">Support</a>
+          </div>
+          <div class="sam">
+            <a href="">Gift card</a>
+          </div>
+          <span class="mm">|</span>
+          <div class="sam">
+            <img src="../res/img/ico_facebook.gif" alt="" />
+            <a href="">Gift card</a>
+          </div>
+          <span class="mm">|</span>
+          <div class="sam">
+            <img src="../res/img/ico_twitter.gif" />
+            <a href="">@STEAM</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/vr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,  // Show 3 slides at a time
+      spaceBetween: 15,  // Spacing between slides
+      loop: true,        // Enable infinite loop
+      navigation: {      // Enable navigation buttons
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+  </script>
+  </body>
+</html>
