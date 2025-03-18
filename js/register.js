@@ -5,13 +5,14 @@
  import { getFirestore,setDoc,doc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
 
  const firebaseConfig = {
-    apiKey: "AIzaSyCg4r-vFgWG4oZ5H1dqhl2pY_9YIA4pNcc",
-    authDomain: "test-193d7.firebaseapp.com",
-    projectId: "test-193d7",
-    storageBucket: "test-193d7.firebasestorage.app",
-    messagingSenderId: "427429647626",
-    appId: "1:427429647626:web:e6c8d0e813b8c99c1956f3"
-  };
+  apiKey: "AIzaSyCkfJ06gQljkwfhrwK2Mk4m6cfcbmXKbvU",
+  authDomain: "test2-2982c.firebaseapp.com",
+  projectId: "test2-2982c",
+  storageBucket: "test2-2982c.firebasestorage.app",
+  messagingSenderId: "813880324506",
+  appId: "1:813880324506:web:38c64be7a9a68867a00a23",
+  measurementId: "G-1DKB1QFD1D"
+};
 
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
